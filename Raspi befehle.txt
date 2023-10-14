@@ -1,0 +1,9 @@
+sudo killall motion
+sudo motion start
+sudo service motion start
+
+sudo nano /etc/motion/motion.conf
+
+nano /home/juju/pyScripts/led_blink.py
+
+https://roboticsbackend.com/raspberry-pi-gpio-interrupts-tutorial/

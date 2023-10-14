@@ -1,0 +1,3 @@
+Verknüpfung anlegen:
+- sudo ln -s ~/Documents/RasPi ~/Desktop/RasPi
+-			 .../Quelle/... .../ZielOrdner/VerknüpfungsName
