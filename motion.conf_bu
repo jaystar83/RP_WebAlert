@@ -90,10 +90,10 @@ despeckle_filter EedDl
 minimum_motion_frames 2
 
 # Gap in seconds of no motion detected that triggers the end of an event.
-event_gap 30
+event_gap 15
 
 # The number of pre-captured (buffered) pictures from before motion.
-pre_capture 2
+pre_capture 3
 
 # Number of frames to capture after motion is no longer detected.
 post_capture 0
