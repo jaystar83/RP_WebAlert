@@ -7,3 +7,29 @@ sudo nano /etc/motion/motion.conf
 nano /home/juju/pyScripts/led_blink.py
 
 https://roboticsbackend.com/raspberry-pi-gpio-interrupts-tutorial/
+
+--------------------------------------------
+Run as Service
+
+The following instructions are only applicable to Debian and Ubuntu based systems. For other distributions, users should consult their distribution documentation and provide pull requests to the Motion developers so that this section can be updated with their distribution.
+Motion can be set up to run as a service which means that it will start automatically whenever the computer is started. When setting up Motion to run as a service, it should be done only after all the other configuration has been completed. It is much easier to edit and revise the parameters when Motion is just running in a terminal rather than as a service. Motion now uses the systemctl and when running as a service, the option daemon must be set as off
+The following commands control the Motion service.
+
+    Start the Motion servicesudo systemctl start motion
+    Stop the Motion servicesudo systemctl stop motion
+
+When running as a service, Motion runs as the user motion and this user is automatically added to the user group of video. By only be included in this user group, when Motion is run, it will only have limited permissions. It is NOT recommended that this user get added to the sudo group. Instead, only add this user to groups that are specifically required. 
+--------------------------------------------------
+
+---- GIT ---
+chmod 0400 "SSH-Key-File"
+
+sudo systemctl status ssh
+
+sudo systemctl enable ssh
+sudo systemctl start ssh
+
+eval `ssh-agent`
+ssh-add ~/.ssh/id_rsa_github
+
+-------------------------------------------
