@@ -1,3 +1,5 @@
+sudo apt-get install motion htop mc git 
+
 sudo killall motion
 sudo motion start
 sudo service motion start
@@ -32,7 +34,7 @@ Instead, only add this user to groups that are specifically required.
 --------------------------------------------------
 
 ---- GIT ---
-chmod 0400 "SSH-Key-File"
+chmod 0400 "id_rsa_github"
 
 sudo systemctl status ssh
 
