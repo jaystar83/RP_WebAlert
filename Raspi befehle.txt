@@ -43,3 +43,14 @@ eval `ssh-agent`
 ssh-add ~/.ssh/id_rsa_github
 
 -------------------------------------------
+
+--- PIN für shutdown configuriern ---
+https://blog.gc2.at/post/pi-herunterfahren/
+
+-  einen Taster an einen GPIO-Eingang hängen und einen Device Tree Eintrag in der 
+   Konfigurationsdatei “config.txt” einfügen. Verantwortlich dafür ist die Funktion 
+   ‘gpio-shutdown’.
+
+- “config.txt”
+
+-------------------------------------------
