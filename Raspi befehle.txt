@@ -10,6 +10,12 @@ nano /home/juju/pyScripts/led_blink.py
 
 https://roboticsbackend.com/raspberry-pi-gpio-interrupts-tutorial/
 
+
+--------------------------------------------
+motion zur GPIO Gruppe hinzufuegen
+
+sudo usermod motion -a -G gpio
+
 --------------------------------------------
 Run as Service
 
@@ -24,8 +30,8 @@ the systemctl and when running as a service, the option daemon must be set as of
 
 The following commands control the Motion service.
 
-    Start the Motion servicesudo systemctl start motion
-    Stop the Motion servicesudo systemctl stop motion
+    Start the Motion service - sudo systemctl start motion
+    Stop the Motion service - sudo systemctl stop motion
 
 When running as a service, Motion runs as the user motion and this user is automatically added 
 to the user group of video. By only be included in this user group, when Motion is run, it will
