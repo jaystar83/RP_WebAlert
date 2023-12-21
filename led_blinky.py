@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
 	alertOut = 18
 	GPIO.setup(alertOut, GPIO.OUT, initial = 0)
-	buttonLeft = 16
+	buttonLeft = 22
 	GPIO.setup(buttonLeft, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 	print("Strg + c beendet das Programm")
