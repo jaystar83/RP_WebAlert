@@ -160,4 +160,5 @@ cython_debug/
 #.idea/
 
 # CoDeSys
-*.~u
+RP_WebAlert/*
+!RP_WebAlert/*.project
