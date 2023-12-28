@@ -20,6 +20,9 @@
 # sudo update-rc.d resetAfter2h.py defaults
 
 import os
+import time
+
+time.sleep(7200)
 os.system('systemctl reboot -i')
 
 # yif you don't want to give root privileges to the python process, you can use systemctl reboot -i.
