@@ -65,3 +65,31 @@ https://blog.gc2.at/post/pi-herunterfahren/
 - “config.txt”
 
 -------------------------------------------
+Gewichtung der Berechtigungen:
+
+  	    Eigentümer 	Gruppe 	Public
+ Lesen   	 4   	 4 	    4
+ Schreiben 	 2 	     2 	    2
+ Ausführen 	 1 	     1 	    1
+
+Der chmod (z.B. 644) errechnet sich durch Addition der einzelnen Werte. Soll z.B. ein PHP-Script welches unter dem Benutzer www-data ausgeführt wird die Rechte bekommen eine Datei zu ändern die dem Benutzer benutzer1 gehört und der Gruppe www-data zugewiesen ist, muss diese Datei auf Ebene der Gruppenrechte min. Lesen und Schreiben können.
+Einige gängige chmod Beispiele in UNIX- / Linux-Systemen:
+
+chmod 644
+Eigentümer = lesen, schreiben
+Gruppe = lesen
+Public = lesen
+
+chmod 755
+Eigentümer = lesen, schreiben, ausführen
+Gruppe = lesen, ausführen
+Public = lesen, ausführen
+
+chmod 777
+Eigentümer = lesen, schreiben, ausführen
+Gruppe = lesen, schreiben, ausführen
+Public = lesen, schreiben, ausführen
+
+ 
+
+ 
